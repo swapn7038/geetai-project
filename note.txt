@@ -1,0 +1,44 @@
+index.html => Entry point
+distictivness.html page is policy page
+
+
+Naac Pages Info
+1. Curricular Activities
+2. Teaching-Learning and Evaluation
+3. Research, Innovation and Extension
+4. Infrastructure and Learning Resources
+5. Student Support and Progression
+6. Governance, Leadership & Management
+7. Institutional Values & Best Practices
+
+
+
+ <div class="game">
+            <a href="naac.html">
+              <ul class="">
+                <li class="nav__links">NAAC</li>
+              </ul>
+            </a>
+            <!-- Dropdown Content -->
+            <div class="dropdown-content">
+              <a href="./NAACpages/curricural.html"> Curricular Activities </a>
+              <a href="./NAACpages/tle.html">
+                Teaching-Learning and Evaluation
+              </a>
+              <a href="./NAACpages/rie.html"
+                >Research, Innovation and Extension
+              </a>
+              <a href="./NAACpages/ilr.html"
+                >Infrastructure and Learning Resources
+              </a>
+              <a href="./NAACpages/ssp.html"
+                >Student Support and Progression
+              </a>
+              <a href="./NAACpages/glm.html"
+                >Governance, Leadership & Management
+              </a>
+              <a href="./NAACpages/ivbp.html"
+                >Institutional Values & Best Practices
+              </a>
+            </div>
+          </div>

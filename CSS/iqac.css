@@ -1,0 +1,88 @@
+/* iqac folder css */
+.df {
+  display: flex;
+}
+
+.flex_dir_col {
+  flex-direction: column;
+}
+
+.mg_top {
+  margin-top: 2rem;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.grey {
+  color: grey;
+}
+
+.font-size-para {
+  font-size: 1.2rem;
+}
+
+.iqac {
+  padding: 2rem;
+}
+
+.main__container {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.main__container h1 {
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+.iqac__img__sec {
+  display: flex;
+}
+
+.iqac__img__sec img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.iqac__about {
+  padding: 2rem 1rem;
+}
+
+.iqac__info a {
+  padding: 1rem 4rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    112deg,
+    rgb(77, 70, 204) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(19, 71, 93) 0%,
+    rgba(226, 232, 238, 1) 100%
+  );
+}
+
+.iqac__about__para {
+  font-family: sans-serif;
+  color: grey;
+}
+
+.aside__btn {
+  padding: 2rem 3rem;
+  background-color: rgb(30, 26, 26);
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+.aside__iqac {
+  flex-direction: column;
+  padding: 1rem;
+}

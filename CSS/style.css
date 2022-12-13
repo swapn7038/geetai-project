@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 18rem;
+  width: 100%;
+  background-color: #ddd;
+  font-family: sans-serif;
+  background-size: cover;
+  background: rgb(236, 231, 91);
+  background: linear-gradient(
+    112deg,
+    rgba(236, 231, 91, 1) 0%,
+    rgba(42, 239, 247, 1) 47%,
+    rgba(8, 159, 255, 1) 100%,
+    rgba(240, 245, 0, 1) 100%,
+    rgba(226, 232, 238, 1) 100%
+  );
+  display: flex;
+  /* border: 4px solid red; */
+}
+
+img {
+  margin-bottom: 1, 8rem;
+}
+
+.header__details {
+  display: flex;
+  margin: auto auto;
+}
+
+.header__sub__info {
+  margin-left: auto;
+}
+
+.header__info {
+  margin-left: 2rem;
+}
+
+.header_h1 {
+  font-size: 1rem;
+}
+
+.header__h1__info {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header__h3 {
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+}
+
+/* ====================== navabr  ======================  */
+
+.nav {
+  height: 8rem;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  /* border: 4px solid red; */
+}
+
+.nav__container {
+  width: 100%;
+  /* border: 3px solid grey; */
+}
+.nav__info {
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  /* margin-left: 0.5rem; */
+  /* border: 3px solid red; */
+}
+
+.nav__info a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav__links {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-left: 1.5rem;
+  font-family: sans-serif;
+  transform-origin: 0.5s;
+  /* border: 2px solid grey; */
+}
+
+.nav__links::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ================================= slider ============================== */
+
+/* ========================== about us page ========================== */
+
+.about__section {
+  overflow: hidden;
+}
+
+.about__image img {
+  border-radius: 10%;
+  margin-left: 2rem;
+  width: 25rem;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__info {
+  margin-left: 5rem;
+}
+
+.about__section__header {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+}
+
+.about__section__subinfo {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================== about us page ends ========================== */
+/* ========================== Info section ========================== */
+.df {
+  display: flex;
+}
+
+.info__btn {
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  margin: 0.5rem 2rem;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: 2px solid #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  text-align: left;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info__section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  position: absolute;
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmVzc2lvbmFsJTIwY29sb3JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+  /* border: 4px solid; */
+}
+
+.info__container {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 4px solid; */
+}
+
+/* ========================== Info section ends ========================== */
+
+/* ==========================  vision and mission  ============================= */
+
+.visionMission {
+  font-family: sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+.visionMission__container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 90vh;
+  /* border: 4px solid red; */
+}
+
+.vision__container {
+  width: 40%;
+  border-radius: 1rem;
+  height: 28rem;
+  margin-left: 60px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.mission__container {
+  width: 40%;
+  border-radius: 1rem;
+  height: 28rem;
+  padding: 20px;
+  margin-left: 100px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.vision__heading {
+  margin-top: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+
+.vision__para {
+  margin-top: 5rem;
+  font-size: 1.1rem;
+  word-spacing: 0.5rem;
+  line-height: 1.4rem;
+}
+
+.mission__heading {
+  font-size: 3rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid black;
+  display: inline-block;
+}
+
+.mission__Para {
+  margin-top: 5rem;
+  font-size: 1.1rem;
+  word-spacing: 0.5rem;
+  line-height: 1.8rem;
+}
+
+/* <!-- ===================================  vision and mission  ends =================================== --> */
+
+/* <!-- ===================================  footer section=================================== --> */
+.footer__section {
+  height: 18rem;
+  display: flex;
+  padding: 5px 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(226, 232, 238, 1) 0%
+  );
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.footer__heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer__col1 {
+  font-size: 0.7rem;
+}
+
+.footer__col1 img {
+  font-size: 0.4rem;
+}
+
+.footer__col2 {
+  margin-top: 3%;
+}
+
+.footer__col3 {
+  margin-top: 3%;
+}
+
+.col3__data {
+  font-size: 1rem;
+}
+
+.footer__col4 {
+  margin-top: 3%;
+}
