@@ -5,36 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geetai Sevabhavi Charitable Trust</title>
-    <!-- =================================== cdn js =================================== -->
+    <!-- =================================== Cdn js =================================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
-    <!-- =================================== cdn js =================================== -->
+    <!-- =================================== Cdn js =================================== -->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
-    <link
-      rel="icon"
-      href="./assets/Geetai Logo Colour.jpeg"
-      type="image/icon type"
-    />
-    <!-- linked css -->
+    <link rel="icon" href="./assets/geetai logo.png" type="image/icon type" />
     <link rel="stylesheet" href="./CSS/style.css" />
 
-    <!-- dropdown css -->
+    <!-- ====================== Dropdown menu css  ============================= -->
     <link rel="stylesheet" href="./CSS/dropdown.css" />
-
-    <!-- gallery css  -->
-    <link rel="stylesheet" href="./CSS/gallery.css" />
-
+    <!-- ====================== End of dropdown menu css  ============================= -->
+    <!-- ====================== Gallery CSS  ============================= -->
+    <!-- <link rel="stylesheet" href="./CSS/gallery.css" /> -->
+    <!-- ====================== Gallery CSS ends  ============================= -->
     <style>
-      /* utility classes */
+      body {
+        background-color: aliceblue;
+      }
+
+      .box__sh {
+        box-shadow: 3px 3px 6px black;
+      }
+
+      .br {
+        border-radius: 0.5rem;
+      }
+
+      .img-gallery {
+        width: 80%;
+        margin: 10rem auto 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 30px;
+      }
+      .img-gallery img {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      .img-gallery img:hover {
+        transform: scale(0.9);
+        rotate: -5deg;
+      }
+      .full-img {
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .full-img img {
+        width: 90%;
+        max-width: 500px;
+      }
+
+      .full-img span {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        font-family: sans-serif;
+      }
     </style>
   </head>
   <body>
-    <!-- =================================== header =================================== -->
-
+    <!-- =================================== Header =================================== -->
     <header class="header">
       <div class="header__details">
         <div class="header__logo">
@@ -55,7 +103,7 @@
         </div>
       </div>
     </header>
-    <!-- =================================== navbar =================================== -->
+    <!-- =================================== Navbar =================================== -->
     <br /><br />
     <br /><br />
     <nav class="nav">
@@ -153,83 +201,147 @@
       </div>
     </nav>
 
-    <!-- =================================== navbar ends =================================== -->
-    <!-- =================================== Galery  =================================== -->
-    <div class="gallery__container">
-      <!-- 1 -->
-      <div class="gallery__column__one">
-        <img
-          class="gallery__img_one box-shadow br"
-          src="./gallery/galleryImg1.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_two box-shadow br"
-          src="./gallery/galleryImg2.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_three box-shadow br"
-          src="./gallery/galleryImg3.jpg"
-          alt=""
-        />
-      </div>
-      <!-- 2 -->
-      <div class="gallery__column__two">
-        <img
-          class="gallery__img_four box-shadow br"
-          src="./gallery/galleryImg4.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_five box-shadow br"
-          src="./gallery/galleryImg5.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_six box-shadow br"
-          src="./gallery/galleryImg6.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_seven box-shadow br"
-          src="./gallery/galleryImg7.jpg"
-          alt=""
-        />
-      </div>
-      <!-- 3 -->
-      <div class="gallery__col__three">
-        <img
-          class="gallery__img_nine box-shadow br"
-          src="./gallery/galleryImg9.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_ten box-shadow br"
-          src="./gallery/galleryImg10.jpg"
-          alt=""
-        />
-      </div>
-      <!-- 4 -->
-      <div class="gallery__col__four">
-        <img
-          class="gallery__img_eight box-shadow br"
-          src="./gallery/galleryImg8.jpg"
-          alt=""
-        />
-        <img
-          class="gallery__img_eleven box-shadow br"
-          src="./gallery/galleryImg11.jpg"
-          alt=""
-        />
-      </div>
-    </div>
-    <!-- =================================== Galery ends =================================== -->
+    <!-- =================================== Navbar ends =================================== -->
 
+    <!-- gallery starts -->
+    <div class="full-img" id="fullImgBox">
+      <img src="./gallery/galleryImg1.jpg" id="fullImg" alt="" />
+      <span onclick="closeFullImg(this.src)">X</span>
+    </div>
+    <section class="img-gallery">
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg1.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg2.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg3.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg4.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg5.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg6.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg7.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg9.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg11.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg12.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg13.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg14.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg16.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg17.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg18.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg19.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg20.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg21.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg15.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg8.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+      <img
+        class="br box__sh"
+        src="./gallery/galleryImg10.jpg"
+        onclick="openFullImg(this.src)"
+        alt=""
+      />
+    </section>
+    <!-- gallery startsends -->
     <!-- ===================================  Footer  =================================== -->
     <br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <footer class="footer__section">
       <!-- col 1 -->
       <div class="footer__col1">
@@ -305,7 +417,20 @@
       </div>
     </footer>
     <!-- ===================================  Footer ends =================================== -->
+    <!-- ===================================  Gallery JS =================================== -->
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
 
-    <!-- =========================== slider script ends -->
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+    <!-- ===================================  Gallery JS ends =================================== -->
   </body>
 </html>

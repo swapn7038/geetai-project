@@ -50,3 +50,14 @@ var responsiveSlider = function () {
 window.onload = function () {
   responsiveSlider();
 };
+
+//
+// navabr
+const menu = document.querySelector(".nav__menu");
+const navabr = document.querySelector(".nav");
+
+menu.addEventListener("click", () => {
+  navabr.classList.toggle("change");
+  menu.classList.toggle("change");
+});
+// end of  navabr
